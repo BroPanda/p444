@@ -1,0 +1,17 @@
+.App {
+    min-height: 100vh;
+    overflow: hidden;
+
+    background-color: #f8ffff;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.lobster{
+    font-family: 'Lobster', cursive;
+}
+
+.mainContent {
+    flex: 1 1 auto;
+}
