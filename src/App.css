@@ -8,6 +8,10 @@
     flex-direction: column;
 }
 
+.pad-5{
+    padding: 5px;
+}
+
 .lobster{
     font-family: 'Lobster', cursive;
 }

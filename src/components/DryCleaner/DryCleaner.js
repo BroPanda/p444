@@ -1,13 +1,13 @@
 export default function DryCleaner() {
     return (
-        <div className="container content-section-a m-5">
+        <div className="container content-section-a">
 
-            <h2 className="section-heading lob ">ХІМЧИСТКА</h2>
+            <h2 className="section-heading pad-5 ">ХІМЧИСТКА</h2>
             <hr/>
             <div className="clearfix"></div>
 
 
-            <div className="row col-lg-10 col-sm-10">
+            <div className="pad-5">
 
                 <h3 className="section-heading">
                     ПРОФЕСІЙНА ХІМЧИСТКА ТЕКСТИЛЬНИХ ПОВЕРХОНЬ

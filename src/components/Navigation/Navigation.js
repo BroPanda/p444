@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 export default function Navigation() {
     return (
         <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -15,19 +17,19 @@ export default function Navigation() {
                 <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul className="nav navbar-nav navbar-right">
                         <li>
-                            <a href="/">Головна</a>
+                            <NavLink to="/">Головна</NavLink>
                         </li>
                         <li>
-                            <a href="/DryCleaner">Хічистка</a>
+                            <NavLink to="/DryCleaner">Хічистка</NavLink>
                         </li>
                         <li>
-                            <a href="#">Мийка вікон</a>
+                            <NavLink to="">Мийка вікон</NavLink>
                         </li>
                         <li>
-                            <a href="#">Блог</a>
+                            <NavLink to="">Блог</NavLink>
                         </li>
                         <li>
-                            <a href="#">Контакти</a>
+                            <NavLink to="">Контакти</NavLink>
                         </li>
                     </ul>
                 </div>

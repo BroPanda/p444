@@ -1,4 +1,6 @@
-export default function Cont__general_clean() {
+import {NavLink} from "react-router-dom";
+
+export default function Cont__GeneralСlean() {
     return (
         <div className="content-section-b">
 
@@ -15,7 +17,7 @@ export default function Cont__general_clean() {
                             <p>- Очиска освітлювалювальних та опалювальних предметів;</p>
                             <p>- Прибирання лоджій та балконів.</p>
                             <div>
-                                <p><a href="#">Детальніше</a></p>
+                                <p><NavLink to="/GeneralСlean">Детальніше</NavLink></p>
                             </div>
                     </div>
                     <div className="col-lg-5 col-sm-pull-6  col-sm-6">

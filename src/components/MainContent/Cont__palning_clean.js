@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 export default function Cont__palning_clean() {
     return (
         <div className="content-section-a" id="clean">
@@ -14,7 +16,7 @@ export default function Cont__palning_clean() {
                         <p>- Поверхневе миття кухонної та побутової техніки;</p>
                         <p>- Чистка сантехніки;</p>
                         <div>
-                            <p><a href="/PlaningClean"> Детальніше </a></p>
+                            <p><NavLink to="/PlaningClean"> Детальніше </NavLink></p>
                         </div>
                     </div>
                     <div className="col-lg-5 col-lg-offset-2 col-sm-6">

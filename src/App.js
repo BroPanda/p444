@@ -6,23 +6,27 @@ import Banner from "./components/MainContent/Banner";
 import {BrowserRouter, Route} from "react-router-dom";
 import DryCleaner from "./components/DryCleaner/DryCleaner";
 import PlaningClean from "./components/PlaningClean/PlaningClean";
+import AfterRepairClean from "./components/After_repair_clean/AfterRepairClean";
+import GeneralСlean from "./components/GeneralСleaning/GeneralСlean";
 
 function App() {
     return (
         <div className="App">
             <BrowserRouter>
 
-            <Navigation/>
+                <Navigation/>
 
-            <div className="mainContent">
+                <div className="mainContent">
+                    <Route exact path="/" component={MainContent}/>
+                    <Route exact path="/DryCleaner" component={DryCleaner}/>
+                    <Route exact path="/PlaningClean" component={PlaningClean}/>
+                    <Route exact path="/AfterRepairClean" component={AfterRepairClean}/>
+                    <Route exact path="/GeneralСlean" component={GeneralСlean}/>
+                </div>
 
-                <Route exact path="/" component={MainContent}/>
-                <Route exact path="/DryCleaner" component={DryCleaner}/>
-                <Route exact path="/PlaningClean" component={PlaningClean}/>
+                <Banner/>
+                <Footer/>
 
-            </div>
-            <Banner/>
-            <Footer/>
 
             </BrowserRouter>
         </div>

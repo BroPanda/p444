@@ -1,4 +1,6 @@
-export default function Cont__after_repair_clean() {
+import {NavLink} from "react-router-dom";
+
+export default function AfterRepairClean() {
     return (
         <div className="content-section-a">
 
@@ -15,7 +17,7 @@ export default function Cont__after_repair_clean() {
                             <p>- Миття та поліровка вікон з відкосами;</p>
                             <p>- Прибирання лоджій та балконів.</p>
                             <div>
-                                <p><a href="#">Детальніше</a></p>
+                                <p><NavLink to="/AfterRepairClean">Детальніше</NavLink></p>
                             </div>
                     </div>
                     <div className="col-lg-5 col-lg-offset-2 col-sm-6">
