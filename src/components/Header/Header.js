@@ -1,5 +1,16 @@
+import React, {useEffect, useState} from "react";
+import CallMeWindow from "../CallMeWindow/CallMeWindow";
+
 export default function Header() {
+
+
+    const CallMe = () => {
+        fetch(`https://api.telegram.org/bot1606712611:AAGUZT30m9uPSt_Foknd0Zi6ZOc9-0G35fM/sendMessage?chat_id=522928013&text=asda`);
+
+    }
     return (
+
+
         <div className="intro-header">
 
             <div className="container">
@@ -12,44 +23,27 @@ export default function Header() {
                             <hr className="intro-divider"/>
                             <ul className="list-inline intro-social-buttons">
                                 <li>
-                                    <a href="tel: +38 097 000 00 00" className="btn btn-default btn-lg"><i
-                                        className="fa fa-phone fa-fw"></i> <span className="network-name">+38097 000 0000</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" className="btn btn-default btn-lg"><i
-                                        className="fa fa-instagram fa-fw"></i> <span
-                                        className="network-name">Instagram</span></a>
-                                </li>
-                                <li>
-                                    <a href="#" className="btn btn-default btn-lg"><i
-                                        className="fa fa-facebook fa-fw"></i> <span
-                                        className="network-name">Facebook</span></a>
+                                    <button className="btn btn-default btn-lg"
+                                            data-toggle="modal"
+                                            data-target="#exampleModal">
+
+                                        <i className="fa fa-phone fa-fw"></i>
+                                        <span className="network-name"> Замовити консультацію</span>
+                                    </button>
                                 </li>
                             </ul>
-
-                            {/*<ul className="list-inline intro-social-buttons">*/}
-                            {/*    <li>*/}
-                            {/*        <a href="tel: +38 097 000 00 00" className="btn btn-default btn-lg"><i*/}
-                            {/*            className="fa fa-phone fa-fw"></i> <span className="network-name">+38097 000 0000</span></a>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <a href="#" className="btn btn-default btn-lg"><i*/}
-                            {/*            className="fa fa-instagram fa-fw"></i> <span*/}
-                            {/*            className="network-name">Instagram</span></a>*/}
-                            {/*    </li>*/}
-                            {/*    <li>*/}
-                            {/*        <a href="#" className="btn btn-default btn-lg"><i*/}
-                            {/*            className="fa fa-facebook fa-fw"></i> <span*/}
-                            {/*            className="network-name">Facebook</span></a>*/}
-                            {/*    </li>*/}
-                            {/*</ul>*/}
-
+                            <CallMeWindow/>
                         </div>
                     </div>
                 </div>
+
 
             </div>
 
         </div>
     )
 }
+
+// https://api.telegram.org/bot1606712611:AAGUZT30m9uPSt_Foknd0Zi6ZOc9-0G35fM/getUpdates
+
+// https://api.telegram.org/bot1606712611:AAGUZT30m9uPSt_Foknd0Zi6ZOc9-0G35fM/sendMessage?chat_id=522928013&text=hi
